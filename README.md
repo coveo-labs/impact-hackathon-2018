@@ -21,21 +21,21 @@ We indexed a Sitemap and a Youtube source.
 * Add Extension script to only index '/Shop/' items, called: OnlyShop.
     * Use [OnlyShop.py](Indexing/OnlyShop.py) as source
 * Add Extension script to debug metadata values, called: Trace.
-    * Use [Trace.py](Indexing/trace.py) as source
+    * Use [Trace.py](Indexing/Trace.py) as source
 * Add Extension script to get Category, called: GetCategoryAndOthers.
-    * Use [GetCategoryAndOthers.py](Indexing/getcategoryandothers.py) as source
+    * Use [GetCategoryAndOthers.py](Indexing/GetCategoryAndOthers.py) as source
 * Assign the Extension script OnlyShop as a pre-conversion script to your source.
 * Assign the Extension script Trace as a post-conversion script to your source.
 * Assign the Extension script GetCategoryAndOthers as a post-conversion script to your source.
 
-The configuration of the Sitemap should be: [Sitemap.json](Indexing/sitemap.json).
-Full configuration: [SitemapComplete.json](Indexing/sitemapcomplete.json).
+The configuration of the Sitemap should be: [Sitemap.json](Indexing/Sitemap.json).
+Full configuration: [SitemapComplete.json](Indexing/SitemapComplete.json).
 
 ### Youtube
 * Create a new source, using a Youtube connector: [Youtube](https://www.youtube.com/channel/UCrX0lGAJ3Q-fHiFsOb9hvHw).
 * Disable the Refresh Schedule.
 
-Full configuration: [YoutubeComplete.json](Indexing/youtubecomplete.json).
+Full configuration: [YoutubeComplete.json](Indexing/YoutubeComplete.json).
 
 ## UI
 
