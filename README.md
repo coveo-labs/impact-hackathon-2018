@@ -19,31 +19,31 @@ We indexed a Sitemap and a Youtube source.
     * myprice: %[productlistprice]
     * mybrand: %[productbrandname]
 * Add Extension script to only index '/Shop/' items, called: OnlyShop.
-    * Use [OnlyShop.py](/Indexing/onlyshop.py) as source
+    * Use [OnlyShop.py](Indexing/onlyshop.py) as source
 * Add Extension script to debug metadata values, called: Trace.
-    * Use [Trace.py](/Indexing/trace.py) as source
+    * Use [Trace.py](Indexing/trace.py) as source
 * Add Extension script to get Category, called: GetCategoryAndOthers.
-    * Use [GetCategoryAndOthers.py](/Indexing/getcategoryandothers.py) as source
+    * Use [GetCategoryAndOthers.py](Indexing/getcategoryandothers.py) as source
 * Assign the Extension script OnlyShop as a pre-conversion script to your source.
 * Assign the Extension script Trace as a post-conversion script to your source.
 * Assign the Extension script GetCategoryAndOthers as a post-conversion script to your source.
 
-The configuration of the Sitemap should be: [Sitemap.json](/Indexing/sitemap.json).
-Full configuration: [SitemapComplete.json](/Indexing/sitemapcomplete.json).
+The configuration of the Sitemap should be: [Sitemap.json](Indexing/sitemap.json).
+Full configuration: [SitemapComplete.json](Indexing/sitemapcomplete.json).
 
 ### Youtube
 * Create a new source, using a Youtube connector: [Youtube](https://www.youtube.com/channel/UCrX0lGAJ3Q-fHiFsOb9hvHw).
 * Disable the Refresh Schedule.
 
-Full configuration: [YoutubeComplete.json](/Indexing/youtubecomplete.json).
+Full configuration: [YoutubeComplete.json](Indexing/youtubecomplete.json).
 
 ## UI
 
 Create a search page.
-Insert the [HTML](/UI/search.html) into it.
+Insert the [HTML](UI/search.html) into it.
 
 ## Chatbot
-Restore the [ChatBot](/ChatBot/Agent.zip) in your Chatbot agent. That will contain all Intents and Entities.
+Restore the [ChatBot](ChatBot/Agent.zip) in your Chatbot agent. That will contain all Intents and Entities.
 The Fullfillment must be manually imported.
 
 ### Important
@@ -52,8 +52,8 @@ The Fullfillment must be manually imported.
 
 ### Fullfillment
 Enable Inline Editor for the Fullfillment. 
-Insert into package.json [package.json](/ChatBot/package.json).
-Insert into index.js [index.js](/ChatBot/index.js).
+Insert into package.json [package.json](ChatBot/package.json).
+Insert into index.js [index.js](ChatBot/index.js).
 
 To make it work, first make sure to change the proper URL and insert your API KEY in index.js.
 ```javascript
