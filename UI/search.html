@@ -1,0 +1,163 @@
+<div id="search" class="CoveoSearchInterface" data-enable-history="true" data-design="new">
+
+    <script src="//static.cloud.coveo.com/searchui/v2.4094/js/CoveoJsSearch.Lazy.min.js"></script> 
+    <script src="//static.cloud.coveo.com/searchui/v2.4094/js/templates/templatesNew.js"></script> 
+    <link rel="stylesheet" href="//static.cloud.coveo.com/searchui/v2.4094/css/CoveoFullSearch.css" />
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // REMOVE JSUI 1 CSS
+        // document.querySelector('link[href="lib/jsui/css/CoveoFullSearchNewDesign.css"]').remove();
+        document.querySelector('link[href="https://static.cloud.coveo.com/searchui/v1.2537/css/CoveoFullSearchNewDesign.css"]').remove();
+        
+      });
+    </script>
+    
+    <div class="CoveoAnalytics"></div>
+    <div class="coveo-tab-section">
+        <a class="CoveoTab" data-id="All" data-caption="All Content"></a>
+    <a class="CoveoTab" data-id="YouTube" data-caption="YouTube" data-expression="@filetype==&quot;youtubevideo&quot;"></a>
+    </div>
+    <div class="coveo-search-section">
+        <div class="CoveoSettings"></div>
+        <div class="CoveoSearchbox" data-enable-omnibox="true"></div>
+    </div>
+    <div class="coveo-main-section">
+        <div class="coveo-facet-column"><div class="CoveoFacet" data-title="Category" data-field="@mycategory" data-tab="All"></div>
+    <div class="CoveoFacet" data-title="Brand" data-field="@mybrand"></div>
+    <div class="CoveoFacet" data-title="FileType" data-field="@filetype" data-tab="All"></div>
+    <div class="CoveoFacet" data-title="Author" data-field="@author" data-tab="All"></div>
+    <div class="CoveoFacet" data-title="Year" data-field="@year" data-tab="All"></div>
+    <div class="CoveoFacet" data-title="Month" data-field="@month" data-tab="All"></div>
+    <div class="CoveoFacet" data-title="Author" data-field="@author" data-tab="YouTube"></div>
+    <div class="CoveoFacet" data-title="Year" data-field="@year" data-tab="YouTube"></div>
+    <div class="CoveoFacet" data-title="Month" data-field="@month" data-tab="YouTube"></div></div>
+        <div class="coveo-results-column">
+            <div class="CoveoShareQuery"></div>
+            <div class="CoveoPreferencesPanel">
+                <div class="CoveoResultsPreferences"></div>
+                <div class="CoveoResultsFiltersPreferences"></div>
+            </div>
+            <div class="CoveoTriggers"></div>
+            <div class="CoveoBreadcrumb"></div>
+            <div class="CoveoSearchAlerts"></div>
+            <div class="coveo-results-header">
+                <div class="coveo-summary-section">
+                    <span class="CoveoQuerySummary"></span>
+                    <span class="CoveoQueryDuration"></span>
+                </div>
+                <div class="coveo-result-layout-section">
+                    <span class="CoveoResultLayout"></span>
+                </div>
+                <div class="coveo-sort-section"><span class="CoveoSort" data-sort-criteria="relevancy" data-caption="Relevance"></span>
+    <span class="CoveoSort" data-sort-criteria="date descending,date ascending" data-caption="Date"></span>
+    <span class="CoveoSort" data-sort-criteria="@myprice ascending, @myprice descending" data-caption="Price"></span>
+    <span class="CoveoSort" data-sort-criteria="@myrating ascending, @myrating descending" data-caption="Rating"></span></div>
+            </div>
+            <div class="CoveoHiddenQuery"></div>
+            <div class="CoveoDidYouMean"></div>
+            <div class="CoveoErrorReport" data-pop-up="false"></div>
+            <div class="CoveoResultList" data-layout="list" data-wait-animation="fade" data-auto-select-fields-to-include="true">
+                <script id="YouTubePlaylistItem" class="result-template" type="text/html" data-layout="list" data-field-filetype="YouTubePlaylistItem"><div class="coveo-result-frame">
+      <div class="coveo-result-row">
+        <div class="coveo-result-cell" style="width:220px; padding-top:4px">
+          <span class="CoveoYouTubeThumbnail">
+          </span>
+        </div>
+        <div class="coveo-result-cell" style="font-size:18px">
+          <a class="CoveoResultLink">
+          </a>
+        </div>
+        <div class="coveo-result-cell" style="text-align:right; width:120px;font-size:12px">
+          <span class="CoveoFieldValue" data-field="@date" data-helper="dateTime">
+          </span>
+        </div>
+      </div>
+    </div>
+    </script>
+    <script id="YouTubeVideo" class="result-template" type="text/html" data-layout="list" data-field-filetype="YouTubeVideo"><div class="coveo-result-frame">
+      <div class="coveo-result-row">
+        <div class="coveo-result-cell" style="width:220px; padding-top:7px">
+          <span class="CoveoYouTubeThumbnail">
+          </span>
+        </div>
+        <div class="coveo-result-cell" style="">
+          <div class="coveo-result-row">
+            <div class="coveo-result-cell" style="font-size:18px">
+              <a class="CoveoResultLink">
+              </a>
+            </div>
+            <div class="coveo-result-cell" style="text-align:right; width:120px;font-size:12px">
+              <span class="CoveoFieldValue" data-field="@date" data-helper="dateTime">
+              </span>
+            </div>
+          </div>
+          <div class="coveo-result-row">
+            <div class="coveo-result-cell" style="padding-top:10px;">
+              <div class="CoveoExcerpt">
+              </div>
+            </div>
+          </div>
+          <div class="coveo-result-row">
+            <div class="coveo-result-cell" style="padding-top:10px;font-size:12px">
+              <span class="CoveoFieldValue" data-field="@ytvideoduration" data-helper="timeSpan" data-helper-options-is-milliseconds="false">
+              </span>
+              <span class="CoveoText" data-value="•">
+              </span>
+              <span class="CoveoFieldValue" data-field="@ytviewcount">
+              </span>
+              <span class="CoveoText" data-value="views">
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </script>
+    <script id="Default" class="result-template" type="text/html" data-layout="list"><div class="coveo-result-frame">
+      <div class="coveo-result-row">
+        <div class="coveo-result-cell" style="width:220px;text-align:center;padding-top:7px;">
+    <span class="CoveoYouTubeThumbnail" data-embed="false">
+          </span>
+    <div class="CoveoQuickview">
+          </div></div>
+        <div class="coveo-result-cell" style="padding-left:15px;">
+          <div class="coveo-result-row">
+            <div class="coveo-result-cell" style="font-size:18px;">
+              <a class="CoveoResultLink">
+              </a>
+            </div>
+            <div class="coveo-result-cell" style="width:120px; text-align:right; font-size:12px">
+              <span class="CoveoFieldValue" data-field="@date" data-helper="date">
+              </span>
+            </div>
+          </div>
+          <div class="coveo-result-row">
+            <div class="coveo-result-cell">
+              <span class="CoveoExcerpt">
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="coveo-result-row">
+        <div class="coveo-result-cell" style="width:220px;text-align:center">
+        </div>
+        <div class="coveo-result-cell" style="font-size:13px;padding-left: 15px;">
+          <table class="CoveoFieldTable" data-minimized-by-default="false"><tr data-field="@mycategory" data-caption="Category">
+              </tr><tr data-field="@mybrand" data-caption="Brand">
+              </tr><tr data-field="@myprice" data-caption="Price" data-helper="currency">
+              </tr><tr data-field="@myrating" data-caption="Rating">
+              </tr></table>
+        </div>
+      </div>
+    </div>
+    </script>
+            </div>
+            <div class="CoveoPager"></div>
+            <div class="CoveoLogo"></div>
+            <div class="CoveoResultsPerPage"></div>
+        </div>
+        
+    </div>
+    </div>
+    
