@@ -52,8 +52,8 @@ The Fullfillment must be manually imported.
 
 ### Fullfillment
 Enable Inline Editor for the Fullfillment. 
-Insert into package.json [package.json](ChatBot/package.json).
-Insert into index.js [index.js](ChatBot/index.js).
+Insert into [package.json](ChatBot/package.json).
+Insert into [index.js](ChatBot/index.js).
 
 To make it work, first make sure to change the proper URL and insert your API KEY in index.js.
 ```javascript
