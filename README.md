@@ -19,7 +19,7 @@ We indexed a Sitemap and a Youtube source.
     * myprice: %[productlistprice]
     * mybrand: %[productbrandname]
 * Add Extension script to only index '/Shop/' items, called: OnlyShop.
-    * Use [OnlyShop.py](./indexing/onlyshop.py) as source
+    * Use [OnlyShop.py](Indexing/OnlyShop.py) as source
 * Add Extension script to debug metadata values, called: Trace.
     * Use [Trace.py](Indexing/trace.py) as source
 * Add Extension script to get Category, called: GetCategoryAndOthers.
